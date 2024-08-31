@@ -9,7 +9,7 @@ internal class MovieService : KtorApi(){
         pathUrl("KMMMovieSampleData/blob/main/popular.json")
     }.body()
 
-    suspend fun  getMovie(movieId : String) : MovieRemote = client.get{
+    suspend fun  getMovie(movieId : Int) : MovieRemote = client.get{
         pathUrl("KMMMovieSampleData/blob/main/movie.json")
     }.body()
 
